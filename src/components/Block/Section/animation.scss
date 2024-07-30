@@ -1,0 +1,47 @@
+
+.section {
+
+    &.loaded {
+
+      &.visible {
+
+        .image-wrap {
+
+          @media (min-width: 741px) {
+            animation-duration: 1s;
+            -webkit-animation-delay: 0.6s;
+            transition-delay: 0.6s;
+            animation-fill-mode: forwards;
+          }
+        }
+      }
+
+      &:not(.full) .image-wrap:not(.image-other) {
+        @media (min-width: 741px) {
+          animation-name: fadeIn;
+        }
+      }
+    }
+
+    &:not(.full) .image-wrap:not(.image-other) {
+      @media (min-width: 741px) {
+
+        .animate & {
+          opacity: 0;
+        }
+      }
+    }
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

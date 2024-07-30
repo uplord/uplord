@@ -1,0 +1,56 @@
+<template>
+  <div class="field">
+    <label v-if="title">{{ title }}</label>
+    <div class="input-wrap radio-group">
+      <div class="radio">
+        <input
+          :id="id"
+          type="radio"
+          :checked="modelValue === value"
+          :disabled="disabled == 'true' || disabled == true"
+          :value="value"
+          v-bind="$attrs"
+          @change="$emit('update:modelValue', value)"
+        />
+        <label v-if="label" :for="id">{{ label }}</label>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      default: ""
+    },
+    label: {
+      type: String,
+      default: ""
+    },
+    id: {
+      type: String,
+      default: ""
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    modelValue: {
+      type: [String, Number],
+      default: ""
+    },
+    value: {
+      type: [String, Number],
+      required: true
+    }
+  },
+  emits: ["update:modelValue"]
+}
+</script>
+
+<style lang="scss" scoped>
+@import "../style";
+@import "style";
+</style>
