@@ -36,8 +36,7 @@ export default defineNuxtConfig({
   modules: [
     "nuxt-icons",
     "@nuxt/image",
-    "@nuxtjs/google-fonts",
-    "nuxt-security"
+    "@nuxtjs/google-fonts"
   ],
   nitro: {
     prerender: {
@@ -61,11 +60,5 @@ export default defineNuxtConfig({
       ]
     }
   },
-  security: {
-    headers: {
-      contentSecurityPolicy: {
-        "frame-ancestors": "'none'"
-      }
-    }
-  },
+
 })
