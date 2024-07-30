@@ -388,10 +388,10 @@ export default {
           sizes: "180x18",
           href: "/images/appletouch.png"
         },
-        /*{
+        {
           rel: "manifest",
           href: "/manifest.json"
-        }*/
+        }
       ],
       htmlAttrs: {
         lang: "en"
