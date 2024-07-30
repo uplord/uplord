@@ -40,22 +40,22 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
-        "/_ipx/f_webp&fit_outside&s_1100x1100/assets/images/me.jpeg",
-        "/_ipx/f_webp&fit_outside&s_550x550/assets/images/me.jpeg",
-        "/_ipx/f_webp&fit_outside&s_280x280/assets/images/me.jpeg",
-        "/_ipx/f_webp&fit_outside&s_140x140/assets/images/me.jpeg",
-        "/_ipx/f_webp&fit_outside&s_1000x1234/assets/images/about.png",
-        "/_ipx/f_webp&fit_outside&s_500x617/assets/images/about.png",
-        "/_ipx/f_webp&fit_outside&s_440x542/assets/images/about.png",
-        "/_ipx/f_webp&fit_outside&s_220x271/assets/images/about.png",
-        "/_ipx/f_webp&fit_outside&s_652x434/assets/images/petervardy.png",
-        "/_ipx/f_webp&fit_outside&s_326x217/assets/images/petervardy.png",
-        "/_ipx/f_webp&fit_outside&s_272x182/assets/images/petervardy.png",
-        "/_ipx/f_webp&fit_outside&s_136x91/assets/images/petervardy.png",
-        "/_ipx/f_webp&fit_outside&s_652x434/assets/images/carmoney.png",
-        "/_ipx/f_webp&fit_outside&s_326x217/assets/images/carmoney.png",
-        "/_ipx/f_webp&fit_outside&s_272x182/assets/images/carmoney.png",
-        "/_ipx/f_webp&fit_outside&s_136x91/assets/images/carmoney.png"
+        "/_ipx/f_webp&fit_outside&s_1100x1100/images/me.jpeg",
+        "/_ipx/f_webp&fit_outside&s_550x550/images/me.jpeg",
+        "/_ipx/f_webp&fit_outside&s_280x280/images/me.jpeg",
+        "/_ipx/f_webp&fit_outside&s_140x140/images/me.jpeg",
+        "/_ipx/f_webp&fit_outside&s_1000x1234/images/about.png",
+        "/_ipx/f_webp&fit_outside&s_500x617/images/about.png",
+        "/_ipx/f_webp&fit_outside&s_440x542/images/about.png",
+        "/_ipx/f_webp&fit_outside&s_220x271/images/about.png",
+        "/_ipx/f_webp&fit_outside&s_652x434/images/petervardy.png",
+        "/_ipx/f_webp&fit_outside&s_326x217/images/petervardy.png",
+        "/_ipx/f_webp&fit_outside&s_272x182/images/petervardy.png",
+        "/_ipx/f_webp&fit_outside&s_136x91/images/petervardy.png",
+        "/_ipx/f_webp&fit_outside&s_652x434/images/carmoney.png",
+        "/_ipx/f_webp&fit_outside&s_326x217/images/carmoney.png",
+        "/_ipx/f_webp&fit_outside&s_272x182/images/carmoney.png",
+        "/_ipx/f_webp&fit_outside&s_136x91/images/carmoney.png"
       ]
     }
   },
