@@ -13,6 +13,8 @@ export default defineNuxtConfig({
     '@mdi/font/css/materialdesignicons.css',
     '~/styles/main.scss',
   ],
+  srcDir: "src/",
+  ssr: false,
   compatibilityDate: '2024-07-30',
   googleFonts: {
     families: {
@@ -37,28 +39,6 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "nuxt-security"
   ],
-  nitro: {
-    prerender: {
-      routes: [
-        "/_ipx/f_webp&fit_outside&s_1100x1100/images/me.jpeg",
-        "/_ipx/f_webp&fit_outside&s_550x550/images/me.jpeg",
-        "/_ipx/f_webp&fit_outside&s_280x280/images/me.jpeg",
-        "/_ipx/f_webp&fit_outside&s_140x140/images/me.jpeg",
-        "/_ipx/f_webp&fit_outside&s_1000x1234/images/about.png",
-        "/_ipx/f_webp&fit_outside&s_500x617/images/about.png",
-        "/_ipx/f_webp&fit_outside&s_440x542/images/about.png",
-        "/_ipx/f_webp&fit_outside&s_220x271/images/about.png",
-        "/_ipx/f_webp&fit_outside&s_652x434/images/petervardy.png",
-        "/_ipx/f_webp&fit_outside&s_326x217/images/petervardy.png",
-        "/_ipx/f_webp&fit_outside&s_272x182/images/petervardy.png",
-        "/_ipx/f_webp&fit_outside&s_136x91/images/petervardy.png",
-        "/_ipx/f_webp&fit_outside&s_652x434/images/carmoney.png",
-        "/_ipx/f_webp&fit_outside&s_326x217/images/carmoney.png",
-        "/_ipx/f_webp&fit_outside&s_272x182/images/carmoney.png",
-        "/_ipx/f_webp&fit_outside&s_136x91/images/carmoney.png"
-      ]
-    }
-  },
   security: {
     headers: {
       contentSecurityPolicy: {
@@ -66,6 +46,4 @@ export default defineNuxtConfig({
       }
     }
   },
-  srcDir: "src/",
-  ssr: false,
 })
